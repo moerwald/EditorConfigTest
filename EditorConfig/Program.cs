@@ -6,30 +6,31 @@ using System.Threading.Tasks;
 
 namespace EditorConfig
 {
-    class positiveInteger
+  class positiveInteger
+  {
+    public positiveInteger(int value)
     {
-        public positiveInteger(int value)
-        {
-            Value = value;
-        }
-
-        private void SomeMethod()
-        {
-            Value = 42;
-
-            int x = 42;
-
-        }
-
-        public int Value { get; set; }
+      Value = value;
     }
 
-
-    class Program
+    private void someMethod()
     {
-        static void Main(string[] args)
-        {
+      Value = 42;
 
-        }
+      int x = 42;
+
+      int y = 42;
     }
+
+    public int Value { get; set; }
+  }
+
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+
+    }
+  }
 }
